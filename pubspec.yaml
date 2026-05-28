@@ -1,0 +1,102 @@
+name: app
+description: "一个新创建的Flutter项目。"
+
+# 下面这行代码可以防止这个包不小心发布到 pub.dev（Flutter官方包仓库）
+# 如果你确实想发布到 pub.dev，就把这一行删掉
+publish_to: 'none' # 移除这行就能发布到 pub.dev
+
+# 下面定义了项目的版本号和构建号
+# 版本号格式：主版本号.次版本号.修订号（例如 1.2.43）
+# 可选参数：后面可以跟一个 + 号再加构建号
+# 主版本号.次版本号.修订号+构建号 （例如 1.2.43+1）
+#
+# 在Android中，版本号对应 versionName，构建号对应 versionCode
+# 了解更多Android版本管理：https://developer.android.com/studio/publish/versioning
+#
+# 在iOS中，版本号对应 CFBundleShortVersionString，构建号对应 CFBundleVersion
+# 了解更多iOS版本管理：
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+#
+# 在Windows中，版本号用于产品版本和文件版本，构建号用于版本后缀
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+# dependencies（依赖）是指你的项目需要用到的其他包才能正常工作
+# 想自动升级到最新版本？运行 `flutter pub upgrade --major-versions`
+# 也可以手动修改下面的版本号改成 pub.dev 上的最新版本
+# 查看哪些依赖有新版本？运行 `flutter pub outdated`
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 下面这行添加了 Cupertino Icons 字体，让你可以用 iOS 风格的图标
+  # 用法：CupertinoIcons 类（在 cupertino_icons 包里）
+  cupertino_icons: ^1.0.8
+  webview_flutter: ^4.10.0  # 确保使用最新版本
+  rapid_kit: 1.4.0-alpha.1
+  flutter_inappwebview: 6.1.5
+  wakelock_plus: ^1.2.8
+  audioplayers: ^6.1.0
+  permission_handler: ^11.3.1
+  mobile_scanner: ^5.2.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # "flutter_lints" 包里面有一套推荐的代码规范检查规则
+  # 这些规则可以帮你写出更好的代码
+  # 这些规则在项目根目录的 analysis_options.yaml 文件中被激活
+  # 查看那个文件可以了解如何关闭某些规则或者添加更多规则
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.0  # 建议使用最新版本
+  
+
+# 了解更多 Dart 包的通用知识，查看：
+# https://dart.dev/tools/pub/pubspec
+
+# 下面这些是 Flutter 特有的配置
+flutter:
+
+  # 下面这行确保 Material 图标字体被包含在你的应用中
+  # 这样你就可以在代码里使用 Material Icons 类里的图标
+  uses-material-design: true
+
+  # 如果你想添加图片等资源文件到应用中，像这样写：
+  assets:
+    - assets/sounds/ringtone.wav
+
+  # 一张图片资源可以指定多个不同分辨率的版本，查看：
+  # https://flutter.dev/to/resolution-aware-images
+
+  # 想从依赖包（比如从 pub.dev 下载的包）里添加资源？查看：
+  # https://flutter.dev/to/asset-from-package
+
+  # 想添加自定义字体到你的应用？像下面这样配置：
+  # fonts:
+  #   - family: 字体名称（自己起）
+  #     fonts:
+  #       - asset: fonts/字体文件-常规.ttf
+  #       - asset: fonts/字体文件-斜体.ttf
+  #         style: italic  # 斜体样式
+  #   - family: 另一个字体名称
+  #     fonts:
+  #       - asset: fonts/另一个字体-常规.ttf
+  #       - asset: fonts/另一个字体-粗体.ttf
+  #         weight: 700
+  #
+  # 想从依赖包添加字体？查看：
+  # https://flutter.dev/to/font-from-package
+
+
+# 在 pubspec.yaml 文件的底部（与 flutter: 平级）添加以下配置
+flutter_launcher_icons:
+  android: "launcher_icon"   # Android 图标文件名（不用加扩展名）
+  ios: true                  # 为 iOS 生成图标
+  image_path: "assets/logo.jpg"  # 你的原图标路径（推荐尺寸 1024x1024）
+  # 如果需要支持 Android 8.0+ 的自适应图标，可以额外配置：
+  adaptive_icon_background: "#FFFFFF"   # 自适应图标背景色
+  adaptive_icon_foreground: "assets/logo.jpg" # 自适应图标前景图
+  # 可选：如果需要圆角效果
+  min_sdk_android: 21

@@ -1,0 +1,133 @@
+I/flutter (28785): 页面加载完成: http://192.168.1.188:9018/#/
+I/flutter (28785): 收到网页消息: [{"type":"init","appId":"AD_31EKtAvCYsxt7jwVFZsLT4pv5OU","packageName":"vip.facedata.intercom","accessToken":"11231123"}]
+I/flutter (28785): 收到 SDK 配置: appId=AD_31EKtAvCYsxt7jwVFZsLT4pv5OU
+I/ANDROID/_RapidKitPlugin_(28785): [onMethodCall] requireLoggingCacheDirectory ... com.example.flutter_application_2.MainActivity@1a5d4b7
+I/ANDROID/_RapidKitPlugin_(28785): [onMethodCall] requireLoggingCacheDirectory path = /data/user/0/com.example.flutter_application_2/files/rapid_logging
+I/RAPID/DART_DL_API(28785): [RAPID_Core_Dart_API_InitializeDL] ret = 0
+I/RAPID/HTTP(28785): [RAPID_Core_Http_LoggingEnable] enable: 1
+I/RAPID/LOG_INTERNAL(28785): [RAPID_Core_CleanExpiredLogs] date: 20260521, size: 440.70 KB, path: /data/user/0/com.example.flutter_application_2/files/rapid_logging/mars/
+I/RAPID/LOG_INTERNAL(28785): [clean_directory]   |__ keep: RAPID.mmap3
+I/RAPID/LOG_INTERNAL(28785): [clean_directory]   |__ keep: RAPID_20260520.xlog
+I/RAPID/LOG_INTERNAL(28785): [clean_directory]   |__ keep: RAPID_20260521.xlog
+I/RAPID/LOG_INTERNAL(28785): [RAPID_Core_CleanExpiredLogs] done, size: 440.70 KB
+I/RAPID/CORE(28785): [Initialize] Greetings from RAPID ...
+I/RAPID/CORE(28785): [Initialize]   |
+I/RAPID/CORE(28785): [Initialize]   |__ Tivs App ID: AD_31EKtAvCYsxt7jwVFZsLT4pv5OU
+I/RAPID/CORE(28785): [Initialize]   |__ Tivs Package Name: vip.facedata.intercom
+I/RAPID/CORE(28785): [Initialize]   |__ Tivs Platform: android
+I/RAPID/CORE(28785): [Initialize]   |__ Tivs API Env: 0
+I/RAPID/CORE(28785): [Initialize]   |__ Tivs Language: zh-cn
+I/RAPID/CORE(28785): [Initialize]   |
+I/RAPID/CORE(28785): [Initialize]   |__ Sdk Version: 2025.1220.1321.2331
+I/RAPID/CORE(28785): [Initialize]   |__ Git Commit: b24b1634
+I/RAPID/CORE(28785): [Initialize]   |__ Build ID: 2331
+I/RAPID/CORE(28785): [Initialize]   |__ Logging Cache Directory: /data/user/0/com.example.flutter_application_2/files/rapid_logging
+I/RAPID/CORE(28785): [Initialize]   |__ Console Logging: 1
+I/RAPID/CORE(28785): [Initialize]   |__ Runtime On: android-arm64
+I/RAPID/CORE(28785): [Initialize]   |__ OS Version: Android 16 (API 36, Redmi 2407FRK8EC, Build BP2A.250605.031.A3)
+I/RAPID/HTTP(28785): [initialize] ep response: {"api":"https://api-cn01.tange365.com/","http_dns":{},"open_api":"https://openapi-cn01.tange365.com/","p2p":{"ttl":0,"url":""},"reg":"http://cn-reg-node022.tange365.com:443/socket.io/","region":"cn01","stat":"https://stat-cn01.tange365.com/","static":"https://static01-cdn.tange365.com/"}
+I/RAPID/HTTP(28785): [Initialize] API ENVIROMENT [cn01]
+I/RAPID/HTTP(28785): [Initialize]   |__ open_host: https://openapi-cn01.tange365.com
+I/RAPID/HTTP(28785): [Initialize]   |__ ws_host: ws://cn-reg-node022.tange365.com:443/socket.io
+I/RAPID/HTTP(28785): [Initialize]   |__ biz_host: https://api-cn01.tange365.com
+I/RAPID/CORE(28785): [Initialize] try to register signal handler ...
+I/RAPID/_SIGNAL_RECV_(28785): [RAPID_Core_RegisterSignalHandler] start ...
+I/RAPID/_SIGNAL_RECV_(28785): [RAPID_Core_RegisterSignalHandler] done.
+I/RAPID/CORE(28785): [Initialize] register signal handler done.
+I/RAPID/CORE(28785): [Initialize] Done, SUCCESS, spent 174 ms
+I/RAPID/PERSISTENT_CHANNEL(28785): [disconnect] ...
+I/RAPID/PERSISTENT_CHANNEL(28785): [disconnect] done.
+I/flutter (28785): SDK 初始化完成
+I/flutter (28785): SDK 初始化成功
+I/flutter (28785): accessToken: 11231123
+I/RAPID/HTTP(28785):  --------- HTTP LOGGING START -----------------------------------------
+I/RAPID/HTTP(28785): https://openapi-cn01.tange365.com/v2/auth/token
+I/RAPID/HTTP(28785):           |__ Method: GET
+I/RAPID/HTTP(28785):           |__ Headers:
+I/RAPID/HTTP(28785):           |     |____ Accept-Language: zh-cn
+I/RAPID/HTTP(28785):           |     |____ Authorization: **** secret ****
+I/RAPID/HTTP(28785):           |     |____ charset: utf-8
+I/RAPID/HTTP(28785):           |     |____ content-type: application/json
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Id: AD_31EKtAvCYsxt7jwVFZsLT4pv5OU
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Pkgname: vip.facedata.intercom
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Platform: android
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Sdk-Version: 25002331
+I/RAPID/HTTP(28785):           |     |____ X-Tg-Platform: android
+I/RAPID/HTTP(28785):           |     |____ X-Tg-Sdk-Version: 25002331
+I/RAPID/HTTP(28785):           |__ Status: 401
+I/RAPID/HTTP(28785):           |__ Response: {"code":401,"msg":"该账号长期未登录，为了账号安全请重新登录","ok":0,"requestid":"9fd9a6fb-4f8a-41ea-a41d-751ff4ea4633","status":"error"}
+I/RAPID/HTTP(28785):           |__ CUrl: curl -X GET -H "Accept-Language: zh-cn" -H "Authorization: **** secret ****" -H "charset: utf-8" -H "content-type: application/json" -H "X-Tg-App-Id: AD_31EKtAvCYsxt7jwVFZsLT4pv5OU" -H "X-Tg-App-Pkgname: vip.facedata.intercom" -H "X-Tg-App-Platform: android" -H "X-Tg-App-Sdk-Version: 25002331" -H "X-Tg-Platform: android" -H "X-Tg-Sdk-Version: 25002331" "https://openapi-cn01.tange365.com/v2/auth/token"
+I/RAPID/HTTP(28785):           |__ Duration: 112.368000
+I/RAPID/HTTP(28785):  --------- HTTP LOGGING END -----------------------------------------
+I/flutter (28785): SDK 认证失败
+I/chromium(28785): [INFO:CONSOLE:10] "收到 Flutter 消息: {"type":"authFailed"}", source:  (10)
+I/flutter (28785): 收到网页消息: [{"type":"init","appId":"AD_31EKtAvCYsxt7jwVFZsLT4pv5OU","packageName":"vip.facedata.intercom","accessToken":"eyJhbGciOiJFZERTQSIsImtpZCI6Im8xWnkzWE5TSGhxOCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDg0MTA1NiIsImlzcyI6ImFwcC9sb2dpbiIsImlhdCI6MTc3OTMzNTQ4NSwiZXhwIjoxNzgxOTI3NDg1LCJhdWQiOlsiYXBwL2JhY2tlbmQiXSwidWlkIjoyMDg0MTA1NiwiYXBwX2lkIjoiQURfMzFFS3RBdkNZc3h0N2p3VkZac0xUNHB2NU9VIn0.7REH5mBbdbs99nC7YMeQdELyoT21doqOXvibaJ3BHJas5nQDV4FTcELtCq08MhFDPzNNUAeKMRMa8KuPtnT0DA"}]
+I/flutter (28785): 收到 SDK 配置: appId=AD_31EKtAvCYsxt7jwVFZsLT4pv5OU
+I/flutter (28785): SDK 初始化成功
+I/flutter (28785): accessToken: eyJhbGciOiJFZERTQSIsImtpZCI6Im8xWnkzWE5TSGhxOCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDg0MTA1NiIsImlzcyI6ImFwcC9sb2dpbiIsImlhdCI6MTc3OTMzNTQ4NSwiZXhwIjoxNzgxOTI3NDg1LCJhdWQiOlsiYXBwL2JhY2tlbmQiXSwidWlkIjoyMDg0MTA1NiwiYXBwX2lkIjoiQURfMzFFS3RBdkNZc3h0N2p3VkZac0xUNHB2NU9VIn0.7REH5mBbdbs99nC7YMeQdELyoT21doqOXvibaJ3BHJas5nQDV4FTcELtCq08MhFDPzNNUAeKMRMa8KuPtnT0DA
+I/RAPID/HTTP(28785):  --------- HTTP LOGGING START -----------------------------------------
+I/RAPID/HTTP(28785): https://openapi-cn01.tange365.com/v2/auth/token
+I/RAPID/HTTP(28785):           |__ Method: GET
+I/RAPID/HTTP(28785):           |__ Headers:
+I/RAPID/HTTP(28785):           |     |____ Accept-Language: zh-cn
+I/RAPID/HTTP(28785):           |     |____ Authorization: **** secret ****
+I/RAPID/HTTP(28785):           |     |____ charset: utf-8
+I/RAPID/HTTP(28785):           |     |____ content-type: application/json
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Id: AD_31EKtAvCYsxt7jwVFZsLT4pv5OU
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Pkgname: vip.facedata.intercom
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Platform: android
+I/RAPID/HTTP(28785):           |     |____ X-Tg-App-Sdk-Version: 25002331
+I/RAPID/HTTP(28785):           |     |____ X-Tg-Platform: android
+I/RAPID/HTTP(28785):           |     |____ X-Tg-Sdk-Version: 25002331
+I/RAPID/HTTP(28785):           |__ Status: 200
+I/RAPID/HTTP(28785):           |__ Response: {"code":200,"data":{"expires_in":2591999,"issue_at":1779335485,"user_id":20841056},"msg":"ok","ok":1,"requestid":"873a4764-7c93-4d0c-9847-7d119f3807fe","status":"ok"}
+I/RAPID/HTTP(28785):           |__ CUrl: curl -X GET -H "Accept-Language: zh-cn" -H "Authorization: **** secret ****" -H "charset: utf-8" -H "content-type: application/json" -H "X-Tg-App-Id: AD_31EKtAvCYsxt7jwVFZsLT4pv5OU" -H "X-Tg-App-Pkgname: vip.facedata.intercom" -H "X-Tg-App-Platform: android" -H "X-Tg-App-Sdk-Version: 25002331" -H "X-Tg-Platform: android" -H "X-Tg-Sdk-Version: 25002331" "https://openapi-cn01.tange365.com/v2/auth/token"
+I/RAPID/HTTP(28785):           |__ Duration: 128.511000
+I/RAPID/HTTP(28785):  --------- HTTP LOGGING END -----------------------------------------
+I/flutter (28785): SDK 认证完成
+I/flutter (28785): SDK 认证成功
+I/chromium(28785): [INFO:CONSOLE:10] "收到 Flutter 消息: {"type":"authSuccess"}", source:  (10)
+D/permissions_handler(28785): No permissions found in manifest for: []15
+D/InAppWebView(28785): Using InAppWebViewClientCompat implementation
+W/cr_WebSettings(28785): setForceDark() is a no-op in an app with targetSdkVersion>=T
+W/cr_SupportWebSettings(28785): setForceDarkBehavior() is a no-op in an app with targetSdkVersion>=T
+I/PlatformViewsController(28785): Using hybrid composition for platform view: 1
+D/BufferQueueConsumer(28785): [](id:707100000008,api:0,p:-1,c:28785) connect: controlledByApp=true
+I/ContentCatcher(28785): Interceptor_Catcher : notifyWebView view: com.pichillilorenzo.flutter_inappwebview_android.webview.in_app_webview.InAppWebView{9b73913 VFEDHVCL. ......I. 0,0-0,0}, size:1, isLoad:true
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+I/chromium(28785): [INFO:CONSOLE:471] "[vite] connecting...", source: http://192.168.1.188:9018/@vite/client (471)
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+W/InsetsSource(28785): Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+I/chromium(28785): [INFO:CONSOLE:578] "[vite] connected.", source: http://192.168.1.188:9018/@vite/client (578)
+I/r_application_2(28785): This is non sticky GC, maxfree is 33554432 minfree is 8388608
+I/chromium(28785): [INFO:CONSOLE:1] "[vue-router]: importing from 'vue-router/dist/vue-router.esm-bundler.js' is deprecated. Use 'vue-router' directly.", source: http://192.168.1.188:9018/node_modules/.pnpm/vue-router@4.6.4_vue@3.5.33_typescript@5.7.2_/node_modules/vue-router/dist/vue-router.esm-bundler.js (1)
+I/r_application_2(28785): This is non sticky GC, maxfree is 33554432 minfree is 8388608
+I/flutter (28785): 页面加载完成: http://192.168.1.188:9018/#/
+I/flutter (28785): 页面加载完成: http://192.168.1.188:9018/#/
+I/flutter (28785): 页面加载完成: http://192.168.1.188:9018/#/
+I/chromium(28785): [INFO:CONSOLE:40] "CustomTabBar created", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (40)
+I/chromium(28785): [INFO:CONSOLE:182] "[ item ] > [object Proxy] 0", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (182)
+I/chromium(28785): [INFO:CONSOLE:182] "[ item ] > [object Proxy] 1", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (182)
+I/chromium(28785): [INFO:CONSOLE:182] "[ item ] > [object Proxy] 2", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (182)
+I/chromium(28785): [INFO:CONSOLE:49] "CustomTabBar mounted", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (49)
+I/chromium(28785): [INFO:CONSOLE:55] "hideTabBar success:  [object Object]", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (55)
+I/chromium(28785): [INFO:CONSOLE:182] "[ item ] > [object Proxy] 0", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (182)
+I/chromium(28785): [INFO:CONSOLE:182] "[ item ] > [object Proxy] 1", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (182)
+I/chromium(28785): [INFO:CONSOLE:182] "[ item ] > [object Proxy] 2", source: http://192.168.1.188:9018/src/components/CustomTabBar.vue?t=1779333927826 (182)
+I/flutter (28785): 页面加载完成: http://192.168.1.188:9018/#/
+I/flutter (28785): 收到网页消息: [{"type":"init","appId":"AD_31EKtAvCYsxt7jwVFZsLT4pv5OU","packageName":"vip.facedata.intercom","accessToken":"11231123"}]
+I/flutter (28785): 收到 SDK 配置: appId=AD_31EKtAvCYsxt7jwVFZsLT4pv5OU
+I/flutter (28785): SDK 初始化成功
+I/flutter (28785): accessToken: 11231123
+I/flutter (28785): SDK 认证成功
+I/chromium(28785): [INFO:CONSOLE:10] "收到 Flutter 消息: {"type":"authSuccess"}", source:  (10)
+W/RenderInspector(28785): DequeueBuffer time out on com.example.flutter_application_2/com.example.flutter_application_2.MainActivity, count=1, avg=22 ms, max=22 ms.
