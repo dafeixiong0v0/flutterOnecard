@@ -4,15 +4,21 @@ workflows:
     instance_type: mac_mini_m1
     max_build_duration: 30
     environment:
-      flutter: 3.29.3 # 换成你的 Flutter 版本
+      flutter: 3.29.3
       xcode: 15.4
       cocoapods: 1.15.2
+      vars:
+        # 在 Codemagic 的 "Teams > Global variables" 或项目变量里设置以下值
+        BUNDLE_ID: "uni.app.UNIFD5D03E"
     scripts:
       - name: Install dependencies
         script: flutter pub get
+      - name: Install CocoaPods dependencies
+        script: cd ios && pod install
       - name: Build iOS
-        script: flutter build ipa --release --export-options-plist=ios/ExportOptions.plist
+        script: flutter build ipa --release --no-codesign
     artifacts:
+      - build/ios/iphoneos/*.app
       - build/ios/ipa/*.ipa
     publishing:
       email:
