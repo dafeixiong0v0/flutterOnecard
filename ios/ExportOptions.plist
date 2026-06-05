@@ -2,14 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>method</key>
-    <string>app-store</string> <!-- 测试用 ad-hoc，上架用 app-store -->
-    <key>signingStyle</key>
-    <string>manual</string>
-    <key>provisioningProfiles</key>
-    <dict>
-        <key>uni.app.UNIFD5D03E</key> <!-- 你的 Bundle ID -->
-        <string>395f3f94-fc6a-4ed3-9286-360693e5c9aa</string> <!-- 描述文件里的 UUID -->
-    </dict>
+  <key>method</key>
+  <string>app-store</string>
+  <key>teamID</key>
+  <string>954K7E56Q8</string>
+  <key>signingStyle</key>
+  <string>manual</string>
+  <key>provisioningProfiles</key>
+  <dict>
+    <key>uni.app.UNIFD5D03E</key>
+    <string>renlianguanjia</string>
+  </dict>
 </dict>
 </plist>
