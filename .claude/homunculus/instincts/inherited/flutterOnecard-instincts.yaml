@@ -1,0 +1,304 @@
+# Instincts generated from https://github.com/dafeixiong0v0/flutterOnecard
+# Generated: 2026-06-05T06:52:08.086Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: flutterOnecard-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/dafeixiong0v0/flutterOnecard
+---
+
+# FlutterOnecard Commit Length
+
+## Action
+
+Keep commit messages concise (~20 characters)
+
+## Evidence
+
+- Average commit message length: 20 chars
+- Based on 5 commits
+
+---
+id: flutterOnecard-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dafeixiong0v0/flutterOnecard
+---
+
+# FlutterOnecard Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: flutterOnecard-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dafeixiong0v0/flutterOnecard
+---
+
+# FlutterOnecard Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: flutterOnecard-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dafeixiong0v0/flutterOnecard
+---
+
+# FlutterOnecard Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: flutterOnecard-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/dafeixiong0v0/flutterOnecard
+---
+
+# FlutterOnecard Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: flutterOnecard-workflow-update-ios-build-workflow
+trigger: "when doing update ios build workflow"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dafeixiong0v0/flutterOnecard
+---
+
+# FlutterOnecard Workflow Update Ios Build Workflow
+
+## Action
+
+Follow the update-ios-build-workflow workflow:
+1. Edit the .github/workflows/ios_build.yml file to adjust build steps or environment.
+2. Commit the changes with a message referencing ios_build.yml.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: .github/workflows/ios_build.yml
+
+---
+id: flutteronecard-instinct-file-naming
+trigger: "When creating or renaming a source file"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+- Consistent with examples in repository
+
+---
+id: flutteronecard-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: flutteronecard-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: flutteronecard-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: flutteronecard-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: flutteronecard-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: flutteronecard-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: flutteronecard-instinct-commit-format
+trigger: "When making a commit"
+confidence: 0.75
+domain: git
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Commit Format
+
+## Action
+
+Use a short, freeform commit message describing the change (e.g., 'Update ExportOptions.plist')
+
+## Evidence
+
+- Pattern in commits.examples
+- No strict prefix or format detected
+
+---
+id: flutteronecard-instinct-update-ios-build-workflow
+trigger: "When someone wants to change the iOS build process or settings in GitHub Actions"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: dafeixiong0v0/flutterOnecard
+---
+
+# Flutteronecard Instinct Update Ios Build Workflow
+
+## Action
+
+Edit the .github/workflows/ios_build.yml file and commit the changes with a message referencing ios_build.yml
+
+## Evidence
+
+- Workflow definition: update-ios-build-workflow
+- Seen in commit messages referencing ios_build.yml
+- Pattern in .github/workflows/ios_build.yml
+
