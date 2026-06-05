@@ -16,7 +16,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 3.44.1
+          flutter-version: 3.44.1 #flutter版本号
           cache: true
 
       - name: Install dependencies
