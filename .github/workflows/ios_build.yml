@@ -1,0 +1,63 @@
+name: Flutter iOS Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.24.0  # 换成你的版本
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Install CocoaPods
+        run: sudo gem install cocoapods
+
+      - name: Pod install
+        working-directory: ios
+        run: pod install --repo-update
+
+      - name: Import signing certificate & profile
+        env:
+          P12_BASE64: ${{ secrets.IOS_CERT_BASE64 }}
+          P12_PASS: ${{ secrets.IOS_CERT_PASSWORD }}
+          PROV_BASE64: ${{ secrets.IOS_PROV_BASE64 }}
+          KEYCHAIN_PASS: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: |
+          KEYCHAIN=ios-build.keychain
+          # 创建临时钥匙串
+          security create-keychain -p "$KEYCHAIN_PASS" $KEYCHAIN
+          security set-keychain-settings -lut 21600 $KEYCHAIN
+          security unlock-keychain -p "$KEYCHAIN_PASS" $KEYCHAIN
+
+          # 导入证书
+          echo "$P12_BASE64" | base64 -d > cert.p12
+          security import cert.p12 -k $KEYCHAIN -P "$P12_PASS" -T /usr/bin/codesign
+
+          # 导入描述文件
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          echo "$PROV_BASE64" | base64 -d > ~/Library/MobileDevice/Provisioning\ Profiles/app.mobileprovision
+
+          # 设为默认钥匙串
+          security default-keychain -s $KEYCHAIN
+
+      - name: Build iOS release (with code sign)
+        run: flutter build ipa --release
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: iOS-IPA
+          path: build/ios/ipa/*.ipa
